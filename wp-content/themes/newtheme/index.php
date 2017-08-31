@@ -4,6 +4,7 @@
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="icon" type="image/png" href="images/favicon.png">
+
     <!-- Stylesheets
     ============================================= -->
     <?php wp_head(); ?>
