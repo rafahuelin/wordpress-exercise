@@ -20,5 +20,12 @@ function nt_enqueue() {
 	wp_enqueue_style( 'nt_magnific-popup' );
 	wp_enqueue_style( 'nt_responsive' );
 	wp_enqueue_style( 'nt_custom' );
-}
 
+
+	wp_register_script( 'nt_plugins', get_template_directory_uri() . '/assets/js/plugins.js', array(), false, true );
+	wp_register_script( 'nt_functions', get_template_directory_uri() . '/assets/js/functions.js', array(), false, true );
+
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'nt_plugins' );
+	wp_enqueue_script( 'nt_functions' );
+}
